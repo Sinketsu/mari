@@ -1,0 +1,319 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 514
+  ClientWidth = 754
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnPaint = FormPaint
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Align = Horizontal
+    Position.Y = 72.000000000000000000
+    Size.Width = 754.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'Panel1Style1'
+    TabOrder = 9
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Horizontal
+      TabOrder = 0
+      Position.X = 57.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 697.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Align = MostLeft
+      Size.Width = 57.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'IP :'
+    end
+  end
+  object Button3: TButton
+    Align = MostBottom
+    Position.Y = 444.000000000000000000
+    Size.Width = 754.000000000000000000
+    Size.Height = 70.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Connect'
+    TintColor = claDodgerblue
+    OnClick = Button3Click
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 754.000000000000000000
+    Size.Height = 444.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 12
+    object bigbtn: TButton
+      Tag = 32
+      Position.X = 128.000000000000000000
+      Position.Y = 416.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Space'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object bottombtn: TButton
+      Tag = 40
+      Position.X = 224.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'v'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object centerbtn: TButton
+      Tag = 13
+      Position.X = 224.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Enter'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object leftbottombtn: TButton
+      Position.X = 128.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'func1'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object leftbtn: TButton
+      Tag = 37
+      Touch.InteractiveGestures = [PressAndTap, LongTap]
+      Position.X = 128.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = '<'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object lefttopbtn: TButton
+      Tag = 27
+      Position.X = 128.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Esc'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object rightbottombtn: TButton
+      Position.X = 320.000000000000000000
+      Position.Y = 328.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'func2'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object rightbtn: TButton
+      Tag = 39
+      Position.X = 320.000000000000000000
+      Position.Y = 240.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = '>'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object righttopbtn: TButton
+      Tag = 8
+      Position.X = 320.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = 'Back'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+    object topbtn: TButton
+      Tag = 38
+      Position.X = 224.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = '^'
+      TintColor = claDodgerblue
+      OnClick = leftbtnlClick
+      OnMouseDown = leftbtnMouseDown
+      OnMouseUp = leftbtnMouseUp
+    end
+  end
+  object setupbtn: TButton
+    Align = MostTop
+    Size.Width = 754.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = 'Settings'
+    TintColor = claDodgerblue
+    OnClick = setupbtnClick
+  end
+  object Panel3: TPanel
+    Position.X = 344.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 16
+    object ListBox1: TListBox
+      Align = MostTop
+      Size.Width = 273.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      Items.Strings = (
+        'Empty'
+        'Esc'
+        'Backspace'
+        'Space'
+        'Enter'
+        'Right'
+        'Left'
+        'Up'
+        'Down'
+        'Caps Lock'
+        '0'
+        '1'
+        '2'
+        '3'
+        '4'
+        '5'
+        '6'
+        '7'
+        '8'
+        '9'
+        'A'
+        'B'
+        'C'
+        'D'
+        'E'
+        'F'
+        'G'
+        'H'
+        'I'
+        'J'
+        'K'
+        'L'
+        'M'
+        'N'
+        'O'
+        'P'
+        'Q'
+        'R'
+        'S'
+        'T'
+        'U'
+        'V'
+        'W'
+        'X'
+        'Y'
+        'Z'
+        'F1'
+        'F2'
+        'F3'
+        'F4'
+        'F5'
+        'F6'
+        'F7'
+        'F8'
+        'F9'
+        'F10'
+        'F11'
+        'F12')
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 268.000000000000000000
+      Viewport.Height = 145.000000000000000000
+    end
+    object Button1: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Cancel'
+      TintColor = claLawngreen
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 192.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 70.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Apply'
+      TintColor = claLawngreen
+      OnClick = Button2Click
+    end
+  end
+  object IdTCPClient1: TIdTCPClient
+    ConnectTimeout = 0
+    IPVersion = Id_IPv4
+    Port = 3000
+    ReadTimeout = -1
+    Left = 56
+    Top = 160
+  end
+end
